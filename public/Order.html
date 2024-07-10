@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adare Restaurant</title>
+    <style>
+        *{
+            margin:0px;
+        }
+        body{
+            background-image: url("../images/background-adare-restaurant.jpg");
+            background-position: inherit;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .logo_part{
+            margin-top: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        th{
+            color:royalblue;
+        }
+        .form{
+            display: inline-block;
+            width: 40%;
+            margin-right: 10%;
+            vertical-align: top;
+        }
+        .ordersum{
+            display: inline-block;
+            width: 40%;
+            border: none;
+            height: 400px;
+            vertical-align: top;
+        }
+        h1{
+            font-family: "Ubuntu", sans-serif;
+            color:greenyellow;
+        }
+        .items{
+            width: 100%;
+            opacity: 0.4;
+            background-color: #818589;
+            height: 275px;
+            text-align: left;
+            color:#98ff98;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: "Merriweather", serif;;
+        }
+        .pay_it_button{
+            border-radius: 20px;
+            border:none;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-top:10px;
+            margin-right: 10px;
+            float:right;
+            background-color:#553b08;
+            text-transform: capitalize;
+            color:white;
+            transition: background-color 0.25s;
+            
+            
+        }
+        .ordersum button:hover{
+            background-color: #75420e;
+           box-shadow:  4px 8px rgba(0, 0, 0, 0.2);
+            
+        }
+        .ordersum button:active{
+            margin-top: 15px;
+            margin-right: 5px;
+            box-shadow: none;
+
+        }
+        .lower_part{
+            /*background-color: #373837;*/
+            width: 50%;
+            color: white;
+            font-family:"Ubuntu", sans-serif;
+            margin-top: 50px;
+            padding-top: 35px;
+            padding-bottom: 35px;
+            margin-left: 25%;
+            font-weight: 100;
+            font-size: 12px;
+            z-index: -1;
+        }
+        
+
+        
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="logo_part">
+        <img src="../images/logo-adare-restaurant.png" alt="Logo_Picture">
+    </div>
+
+    <div class="form">
+        <form >
+            <table style="text-align: left; border-spacing: 0 5px; ">
+                <tr>
+                    <th>Name:</th>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <th>Surname:</th>
+                    <td><input type="text" name="" id=""></td>
+                </tr>
+                <tr>
+                    <th>Phone Number:</th>
+                    <td>
+                        <input type="text" name="" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <th>Email:</th>
+                    <td><input type="email" name="" id="" placeholder="Optional"></td>
+                </tr>
+                <tr>
+                    <th>Address:</th>
+                    <td><textarea name="" id="" cols="40"; rows="10"></textarea></td>
+                </tr>
+                <tr>
+                    <th>Payment Style:</th>
+                    <td>
+                        <select style="padding:10px;">
+                            <option value="Credit Card">Credit Card</option>
+                            <option value="Cash">Cash</option>
+                            <option value="Food Card">Food Card</option>
+                        </select>
+
+                    </td>
+                </tr>
+                <tr>
+                    <th>Ring the Bell</th>
+                    <td style="color:white">
+                            <input type="radio" name="bell" id="">Yes
+                            <input style="margin-left: 10px;"  type="radio" name="bell" id="">No
+                    </td>
+                </tr>
+                <tr style="color:greenyellow">
+                    <td colspan="2"><input style="margin-right:5px;" type="radio" name="accept" id="">I Accept the Order</td>
+                </tr>
+                <tr style="color:greenyellow">
+                    <td colspan="2"> 
+                        <input style="margin-right:5px;" type="radio" name="accept" id="">I do not Accept the Order
+                    </td>
+                </tr>
+                <tr  style="color: white;">
+                        <td ><input style="padding-left: 8px; margin-right: 5px;" type="reset" value="">Reset</td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+
+    <div class="ordersum">
+        <center>
+            <h1 style="margin-bottom: 5px;">Order Summary</h1><hr style="margin-bottom: 5px;">
+            <div class="items">
+                   
+            </div>
+            <button class="pay_it_button">
+                <!--Butona basıldığında uyarı yada bir siteye yönlendir.-->
+                <a style="color:white; text-decoration: none;" href="#">Complete the Order</a>
+            </button>
+        </center>
+    </div>
+
+    <div class="lower_part">
+        <center>
+            <footer>
+                Main St, Blackabbey, Adare, Co. Limerick - Copyright © OGA Production
+            </footer>
+        </center>
+    </div>
+</body>
+</html>

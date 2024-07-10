@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adare Restaurant</title>
+    <style>
+         *{
+            margin: 0px;
+            font-family: "Ubuntu", sans-serif;
+        }
+        body{
+            background-image:url("../images/background-adare-restaurant.jpg");
+            background-position: inherit;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .logo_part{
+            margin-top: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1,h2{
+            font-family: "Ubuntu", sans-serif;
+            color:#bf3904;
+            text-align: center;
+        }
+        hr.half-width{
+        width:25%;
+        margin: 0 auto;
+        }
+        .sender{
+            vertical-align: top;
+            display: inline-block;
+            width: 40%;
+            margin-top: 15px;
+            margin-left: 10px;
+            margin-right: 8%;
+            
+        }
+        .reciever{
+            vertical-align: top;
+            display: inline-block;
+            width: 40%;
+            margin-top: 15px;
+            margin-right: 0px;
+            margin-left: 8%;
+            
+        }
+        th{
+           padding-left: 10px;
+           padding-right: 15px;
+           font-family: "Ubuntu", sans-serif;
+           font-size: 18px;
+           color:royalblue;
+           text-align: justify;
+           
+       }
+       td{
+        justify-content: right;
+       }
+
+       .lower_part{
+            /*background-color: #373837;*/
+            width: 50%;
+            color: white;
+            font-family:"Ubuntu", sans-serif;
+            margin-top: 50px;
+            padding-top: 35px;
+            padding-bottom: 35px;
+            margin-left: 25%;
+            font-weight: 100;
+            font-size: 12px;
+            z-index: -1;
+        }
+        .clean{
+            border: none;
+            border-radius: 8px;
+            padding: 10px 15px 10px 15px;
+            background-color:salmon;
+            margin-left: 10px; 
+            margin-top: 7px;
+            transition: background-color 0.25s, color 0.25s, box-shadow 0.25s;
+        }
+        .clean:hover{
+                background-color:cadetblue;
+                color:thistle;
+                box-shadow: 5px 5px grey;
+
+        }
+        .clean:active{
+            box-shadow: none;
+            margin-top:12px;
+            margin-left: 15px;
+        }
+        .acceptance  {
+            margin-top: 20px;
+            color:gold;
+            text-align: justify;
+            width:50%;
+            margin-left:25%;
+            
+            transition: color 0.25s;
+        }
+        .acceptance .noconfirm{
+            transition: color 0.25s;
+        }
+        .acceptance .noconfirm:hover{
+            color:red;
+        }
+
+        .acceptance .yesconfirm{
+            transition: color 0.25s;
+        }
+
+        .acceptance .yesconfirm:hover{
+            color:lime;
+        }
+
+        .acceptgc{
+            margin-top: 15px;
+        }
+        .acceptgc button{
+            padding: 15px 20px 15px 20px;
+            border-radius: 10px;
+            border:none;
+            background-color: salmon;
+            transition:background-color 0.25s ,box-shadow 0.25s;
+        }
+        .acceptgc a{
+            color:black;
+            text-decoration: none;
+            transition: color 0.40s
+        }
+        .acceptgc button:hover{
+            background-color: cadetblue;
+            box-shadow: 5px 5px grey;
+            transition: color 0.25s;
+        }
+        .acceptgc button:hover a{
+            color:thistle;
+        }
+        .acceptgc button:active{
+            box-shadow: none;
+            margin-top:20px;
+            margin-left:10px;
+            
+        }
+
+       
+
+        
+        
+       
+    </style>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="logo_part">
+        <img src="../images/logo-adare-restaurant.png" alt="Logo_Picture">
+    </div>
+    <h1 >
+            GIFT VOUCHER
+    </h1>
+    <hr class="half-width">
+    
+    <div class="sender">
+           <h2>Sender Information</h2> 
+            <form>
+                <table>
+                    <tr>
+                        <th>
+                        Name and Surname
+                        </th>
+                        <td>
+                            <input type="text" name="" id="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Phone Number</th>
+                        <td>
+                            <input type="tel" name="" id="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Message</th>
+                        <td>
+                            <textarea name="" id="" placeholder="Any Message to Reciever (Optional)" cols="45" rows="8"></textarea>
+                        </td>
+                    </tr> 
+                    <tr>
+                            <th>Amount</th>
+                            <td><input type="text" name="" id="" placeholder="Enter a Amount based on $"></td>
+                    </tr>
+                    <tr>
+                        <th>Payment Style</th>
+                        <td> 
+                            <select>
+                                <option>Credit Card</option>
+                                <option >Visa</option>
+                                <option >Cash</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            Your Name Visible in Card?
+                        </th>
+                        <td style="color:gold;"> 
+                            <input type="radio" name="visible" id="visible">Yes
+                            <input style="margin-left: 8px;"   type="radio" name="visible" id="visible">No
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input class="clean" type="reset" value="Clean It">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        
+        <div class="reciever">
+               <h2>Recipient Information</h2>
+               <form >
+                <table>
+                    <tr>
+                        <th>Name and Surname</th>
+                        <td>
+                            <input type="text" name="" id="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Phone Number</th>
+                        <td><input type="tel" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <th>Mail</th>
+                        <td><input type="text" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <th>Method of Delivery</th>
+                        <td style="color:gold;">
+                            <input type="radio" name="delivery" id="">Digital (email)
+                            <input style="margin-left: 10px;" type="radio" name="delivery" id="">Physical (mail)
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Address</th>
+                        <td>
+                            <textarea name="" id="" cols="45" rows="8" placeholder="If you select Physical Delivery"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Delivery Date</th>
+                        <td>
+                            <input type="date" name="" id="">
+                        </td>
+                    </tr>
+
+                    <tr >
+                        <td>
+                            <input class="clean" type="reset" value="Clean It">
+                        </td>
+                    </tr>
+                    
+                </table>
+               </form>
+
+              
+        </div>
+
+        <div class="acceptance">
+            <div class="yesconfirm">
+                <input id="accept1" style="margin-left: 225px; margin-bottom: 4px;" type="radio" name="accept">I Confirm Every Information
+
+            </div>
+            <div class="noconfirm">
+                <input id="accept2" style="margin-left: 225px;"  type="radio" name="accept" >I Do Not Confirm This Contract
+            </div>
+        </div>
+
+        <div class="acceptgc">
+            <center>
+                <button>
+                    <a href="#">Complete Gift Card</a>
+                </button>
+            </center>
+                
+        </div>
+
+        <div class="lower_part">
+            <center>
+                <footer>
+                    Main St, Blackabbey, Adare, Co. Limerick - Copyright © OGA Production
+                </footer>
+            </center>
+        </div>
+</body>
+</html>
